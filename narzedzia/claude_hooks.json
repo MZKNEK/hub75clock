@@ -1,0 +1,16 @@
+{
+  "hooks": {
+    "UserPromptSubmit": [
+      { "hooks": [ { "type": "command", "command": "curl.exe", "args": ["-s", "-m", "2", "http://IP_ZEGARA/ai?s=work"], "async": true } ] }
+    ],
+    "PreToolUse": [
+      { "matcher": "*", "hooks": [ { "type": "command", "command": "curl.exe", "args": ["-s", "-m", "2", "http://IP_ZEGARA/ai?s=work"], "async": true } ] }
+    ],
+    "Notification": [
+      { "matcher": "permission_prompt", "hooks": [ { "type": "command", "command": "curl.exe", "args": ["-s", "-m", "2", "http://IP_ZEGARA/ai?s=wait"], "async": true } ] }
+    ],
+    "Stop": [
+      { "hooks": [ { "type": "command", "command": "curl.exe", "args": ["-s", "-m", "2", "http://IP_ZEGARA/ai?s=done"], "async": true } ] }
+    ]
+  }
+}

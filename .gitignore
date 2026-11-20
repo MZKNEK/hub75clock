@@ -1,0 +1,10 @@
+build/
+
+# Lokalne dane - nie publikowac
+config.h
+narzedzia/settings_claude_code.json
+
+# Notatki dla Claude Code (lokalne)
+CLAUDE.md
+CLAUDE.local.md
+.claude/
